@@ -14,5 +14,10 @@ namespace mvc.Controllers
         {
             return View(OgrenciVeri.Ogrenciler);
         }
+
+        public ActionResult Yeni()
+        {
+            return View();
+        }
     }
 }
