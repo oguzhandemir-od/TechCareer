@@ -1,4 +1,5 @@
-﻿using mvc.Veri;
+﻿using mvc.Models;
+using mvc.Veri;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,13 @@ namespace mvc.Controllers
         public ActionResult Yeni()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Yeni(Ogrenci yeniOgrenci)
+        {
+            OgrenciVeri.Ogrenciler.Add(yeniOgrenci);
+            return RedirectToAction("Listele");
         }
     }
 }
