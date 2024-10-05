@@ -34,5 +34,17 @@ namespace mvc.Controllers
                 FirstOrDefault();
             return View(ogrenci);
         }
+
+        [HttpPost]
+        public ActionResult Duzenle(Ogrenci ogrenci)
+        {
+            Ogrenci duzenlenecekOgrenci = OgrenciVeri.Ogrenciler.Where(o => o.Id == ogrenci.Id).FirstOrDefault();
+            duzenlenecekOgrenci.Ad = ogrenci.Ad;
+            duzenlenecekOgrenci.BolumAd = ogrenci.BolumAd;
+            duzenlenecekOgrenci.GirisYili = ogrenci.GirisYili;
+            duzenlenecekOgrenci.Soyad = ogrenci.Soyad;
+            duzenlenecekOgrenci.TCKimlikNo = ogrenci.TCKimlikNo;
+            return RedirectToAction("Listele");
+        }
     }
 }
