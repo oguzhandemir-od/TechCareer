@@ -10,6 +10,8 @@ namespace mvc.Models
     public class Ogrenci
     {
         public int Id {  get; set; }
+
+        [Required(ErrorMessage = "Ad Gereklidir!")]
         public string Ad {  get; set; }
         public string Soyad { get; set; }
 
