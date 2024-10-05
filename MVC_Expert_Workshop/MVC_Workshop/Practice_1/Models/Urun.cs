@@ -6,7 +6,7 @@ using System.Web;
 namespace Practice_1.Models
 {
     public class Urun
-    {
+    {        
         public int Id { get; set; }
         public string UrunAdi { get; set; }
         public string UrunMagazasi { get; set; }
