@@ -46,5 +46,11 @@ namespace mvc.Controllers
             duzenlenecekOgrenci.TCKimlikNo = ogrenci.TCKimlikNo;
             return RedirectToAction("Listele");
         }
+
+        public ActionResult Sil(int id)
+        {
+            var ogrenci = OgrenciVeri.Ogrenciler.Where(o => o.Id == id).FirstOrDefault();
+            return View(ogrenci);
+        }
     }
 }
