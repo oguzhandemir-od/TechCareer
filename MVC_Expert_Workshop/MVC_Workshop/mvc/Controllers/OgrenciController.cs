@@ -52,5 +52,13 @@ namespace mvc.Controllers
             var ogrenci = OgrenciVeri.Ogrenciler.Where(o => o.Id == id).FirstOrDefault();
             return View(ogrenci);
         }
+
+        [HttpPost]
+        public ActionResult Sil(Ogrenci ogrenci)
+        {
+            Ogrenci silinecekogrenci = OgrenciVeri.Ogrenciler.Where(o => o.Id == ogrenci.Id).FirstOrDefault();
+            OgrenciVeri.Ogrenciler.Remove(silinecekogrenci);
+            return RedirectToAction("Listele");
+        }
     }
 }
