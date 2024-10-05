@@ -16,6 +16,7 @@ namespace mvc.Models
         public string Soyad { get; set; }
 
         [Required(ErrorMessage ="TC Kimlik Numarası Gereklidir!")]
+        [DisplayName("Türkiye Cumhuriyeti Kimlik Numarası")]
         public string TCKimlikNo { get; set; }
         public string BolumAd { get; set; }
         public int GirisYili {  get; set; }
