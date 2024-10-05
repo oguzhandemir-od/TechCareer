@@ -27,5 +27,12 @@ namespace mvc.Controllers
             OgrenciVeri.Ogrenciler.Add(yeniOgrenci);
             return RedirectToAction("Listele");
         }
+
+        public ActionResult Duzenle(int id)
+        {
+            var ogrenci = OgrenciVeri.Ogrenciler.Where(o => o.Id == id).
+                FirstOrDefault();
+            return View(ogrenci);
+        }
     }
 }
