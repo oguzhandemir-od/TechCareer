@@ -183,6 +183,7 @@
     <Content Include="Views\Urun\Listele.cshtml" />
     <Content Include="Views\Urun\Yeni.cshtml" />
     <Content Include="Views\Urun\Duzenle.cshtml" />
+    <Content Include="Views\Urun\Sil.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
