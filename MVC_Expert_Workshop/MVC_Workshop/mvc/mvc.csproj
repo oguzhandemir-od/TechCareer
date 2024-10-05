@@ -183,6 +183,7 @@
     <Content Include="Views\Ogrenci\Listele.cshtml" />
     <Content Include="Views\Ogrenci\Yeni.cshtml" />
     <Content Include="Views\Ogrenci\Duzenle.cshtml" />
+    <Content Include="Views\Ogrenci\Sil.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
