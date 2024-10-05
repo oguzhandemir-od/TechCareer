@@ -30,7 +30,7 @@ namespace Practice_1.Veri
             },
             new Urun
             {
-                Id=2,
+                Id=3,
                 UrunAdi="Kablosuz Kulaklık",
                 UrunFiyati=599,
                 UrunKargoSuresi=2,
