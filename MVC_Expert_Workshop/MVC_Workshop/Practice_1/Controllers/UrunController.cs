@@ -44,7 +44,20 @@ namespace Practice_1.Controllers
             duzenlenecekUrun.UrunFiyati = urun.UrunFiyati;
             duzenlenecekUrun.UrunKargoSuresi = urun.UrunKargoSuresi;
             return RedirectToAction("Listele");
+        }
 
+        public ActionResult Sil(int id)
+        {
+            var urun = UrunVeri.Urunler.Where(u => u.Id == id).FirstOrDefault();
+            return View(urun);
+        }
+
+        [HttpPost]
+        public ActionResult Sil(Urun urun)
+        {
+            Urun silinecekUrun = UrunVeri.Urunler.Where(u => u.Id == urun.Id).FirstOrDefault();
+            UrunVeri.Urunler.Remove(silinecekUrun);
+            return RedirectToAction("Listele");
         }
     }
 }
