@@ -27,5 +27,24 @@ namespace Practice_1.Controllers
             UrunVeri.Urunler.Add(yeniUrun);
             return RedirectToAction("Listele");
         }
+
+        public ActionResult Duzenle(int id)
+        {
+            var urun = UrunVeri.Urunler.Where(u => u.Id == id).FirstOrDefault();
+            return View(urun);
+        }
+
+        [HttpPost]
+        public ActionResult Duzenle(Urun urun)
+        {
+            Urun duzenlenecekUrun= UrunVeri.Urunler.Where(u => u.Id == urun.Id).FirstOrDefault();
+            duzenlenecekUrun.UrunAdi=urun.UrunAdi;
+            duzenlenecekUrun.UrunMagazasi = urun.UrunMagazasi;
+            duzenlenecekUrun.UrunOzellikleri = urun.UrunOzellikleri;
+            duzenlenecekUrun.UrunFiyati = urun.UrunFiyati;
+            duzenlenecekUrun.UrunKargoSuresi = urun.UrunKargoSuresi;
+            return RedirectToAction("Listele");
+
+        }
     }
 }
