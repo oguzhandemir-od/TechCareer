@@ -24,6 +24,7 @@ namespace Practice_1.Controllers
         [HttpPost]
         public ActionResult Yeni(Urun yeniUrun)
         {
+            UrunVeri.Urunler.Add(yeniUrun);
             return RedirectToAction("Listele");
         }
     }
