@@ -24,6 +24,7 @@ namespace mvc.Controllers
         [HttpPost]
         public ActionResult Yeni(Ogrenci yeniOgrenci)
         {
+            yeniOgrenci.Id = OgrenciVeri.Ogrenciler.Max(s => s.Id) + 1;
             OgrenciVeri.Ogrenciler.Add(yeniOgrenci);
             return RedirectToAction("Listele");
         }
