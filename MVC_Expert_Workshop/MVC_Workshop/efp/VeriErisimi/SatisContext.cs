@@ -10,7 +10,10 @@ namespace efp.VeriErisimi
 {
     public class SatisContext : DbContext
     {
-        public SatisContext() : base("SatisVeriTabani") { }
+        public SatisContext() : base("SatisVeriTabani") 
+        {
+            Database.SetInitializer(new ilksatisInitializer());
+        }
         public DbSet<Urun> Urunler { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
