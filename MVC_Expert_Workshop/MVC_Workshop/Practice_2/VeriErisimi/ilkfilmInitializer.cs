@@ -13,8 +13,8 @@ namespace Practice_2.VeriErisimi
         {
             List<Film> filmler = new List<Film>
             {
-                new Film{Ad="Hızlı ve Öfkeli", Aciklama="Hızlı ve Öfkeli",Tur="Aksiyon",Puan=8}
-                new Film{Ad="Kaptan Amerika",Aciklama="Kaptan Amerika",Tur="Bilim Kurgu",Puan=8}
+                new Film{Ad="Hızlı ve Öfkeli", Aciklama="Hızlı ve Öfkeli",Tur="Aksiyon",Puan=8},
+                new Film{Ad="Kaptan Amerika",Aciklama="Kaptan Amerika",Tur="Bilim Kurgu",Puan=8},
                 new Film{Ad="Batman",Aciklama="Batman",Tur="Aksiyon",Puan=9}
             };
             filmler.ForEach(film => context.Filmler.Add(film));
