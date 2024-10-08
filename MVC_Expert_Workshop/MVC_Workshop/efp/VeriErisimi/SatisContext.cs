@@ -10,7 +10,7 @@ namespace efp.VeriErisimi
 {
     public class SatisContext : DbContext
     {
-        public SatisContext() : base("SatisVeriTabani") 
+        public SatisContext() : base("SatisVeritabani") 
         {
             Database.SetInitializer(new ilksatisInitializer());
         }
