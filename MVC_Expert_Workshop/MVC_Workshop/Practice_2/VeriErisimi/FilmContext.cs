@@ -10,7 +10,10 @@ namespace Practice_2.VeriErisimi
 {
     public class FilmContext:DbContext
     {
-        public FilmContext() : base("FilmVeriTabani") { }
+        public FilmContext() : base("FilmVeriTabani") 
+        {
+            Database.SetInitializer(new ilkfilmInitializer());
+        }
 
         public DbSet<Film> Filmler { get; set; }
 
