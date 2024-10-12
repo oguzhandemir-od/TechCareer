@@ -12,7 +12,10 @@ namespace mvc.Models
         public int Id {  get; set; }
 
         [Required(ErrorMessage = "Ad Gereklidir!")]
+        [DisplayName("İsim")]
         public string Ad {  get; set; }
+
+        [DisplayName("Soyisim")]
         public string Soyad { get; set; }
 
         [Required(ErrorMessage ="TC Kimlik Numarası Gereklidir!")]
@@ -20,7 +23,11 @@ namespace mvc.Models
         [MinLength(11,ErrorMessage ="TC Kimlik No 11 haneli olmalıdır!")]
         [MaxLength(11, ErrorMessage = "TC Kimlik No 11 haneli olmalıdır!")]
         public string TCKimlikNo { get; set; }
+
+        [DisplayName("Bölüm")]
         public string BolumAd { get; set; }
+
+        [DisplayName("Giriş Yılı")]
         public int GirisYili {  get; set; }
 
         //[EmailAddress(ErrorMessage ="Lütfen eposta adresinizi doğru giriniz!")]
