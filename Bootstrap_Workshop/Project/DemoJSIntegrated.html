@@ -62,7 +62,7 @@
               >
                 Detaylar
               </button>
-              <button class="btn btn-success" onclick="addToCart('Ürün 1',199)">
+              <button class="btn btn-success" onclick="addToCart('Ürün 1',199)" onclick="showToast()">
                 Sepete Ekle
               </button>
             </div>
@@ -86,7 +86,7 @@
               >
                 Detaylar
               </button>
-              <button class="btn btn-success" onclick="addToCart('Ürün 2',199)">
+              <button class="btn btn-success" onclick="addToCart('Ürün 2',199)" onclick="showToast()">
                 Sepete Ekle
               </button>
             </div>
@@ -110,9 +110,45 @@
               >
                 Detaylar
               </button>
-              <button class="btn btn-success" onclick="addToCart('Ürün 3',199)">
+              <button class="btn btn-success" onclick="addToCart('Ürün 3',199)" onclick="showToast()">
                 Sepete Ekle
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast-section" class="container mt-5">
+      <h2>Sepet</h2>
+      <button class="btn btn-primary" onclick="showToast()">
+        Toast Göster
+      </button>
+      <div class="toast-container position-fixed bottom-0 end-0 pd-3">
+        <div
+          id="liveToast"
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <img
+              src="https://via.placeholder.com/20"
+              class="rounded me-2"
+              alt=""
+            />
+            <strong class="me-auto">Techcareer.net</strong>
+            <small>Şimdi</small>
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button></div>
+            <div class="toast-body">
+                Ürün sepete eklendi!
             </div>
           </div>
         </div>
@@ -179,6 +215,9 @@
         function addToCart(name,price){
             cart.push({name:name,price:price});
             totalPrice+=price;
+            var toastEl=document.getElementById('liveToast');
+            var toast=new bootstrap.Toast(toastEl);
+            toast.show();
             updateCart();
         }
         
@@ -194,6 +233,12 @@
             
             document.getElementById('cart-count').textContent=cart.length;
             document.getElementById('total-price').textContent=totalPrice;
+        }
+
+        function showToast(){
+            var toastEl=document.getElementById('liveToast');
+            var toast=new bootstrap.Toast(toastEl);
+            toast.show();
         }
     </script>
   </body>
