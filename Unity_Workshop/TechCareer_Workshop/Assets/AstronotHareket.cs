@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AstronotHareket : MonoBehaviour
 {
+    public float hizKatsayisi;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,12 @@ public class AstronotHareket : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        float yatay = Input.GetAxis("Horizontal");
+        transform.position += new Vector3(yatay*hizKatsayisi*Time.deltaTime, 0, 0);
+        //Debug.Log(yatay);
+
+        float dikey = Input.GetAxis("Vertical");
+        transform.position += new Vector3(0, dikey*hizKatsayisi*Time.deltaTime, 0);
     }
 
     private void LateUpdate()
