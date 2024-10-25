@@ -31,4 +31,14 @@ public class AstronotHareket : MonoBehaviour
     {
         
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Çarpýþma Gerçekleþti!!!");
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Kristalin yanýndan geçme algýlandý!!!");
+    }
 }
