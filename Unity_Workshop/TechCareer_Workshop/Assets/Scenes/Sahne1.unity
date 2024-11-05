@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 317834242}
   - component: {fileID: 317834241}
   - component: {fileID: 317834240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Crystal_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +745,7 @@ GameObject:
   - component: {fileID: 626704285}
   - component: {fileID: 626704284}
   - component: {fileID: 626704283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Crystal_01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1265,7 +1265,7 @@ GameObject:
   - component: {fileID: 1408037640}
   - component: {fileID: 1408037639}
   - component: {fileID: 1408037641}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Box_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1310,8 +1310,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1793027165
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1470a8da87de4eb44966e953ef10b55e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1333,7 +1333,7 @@ Transform:
   m_GameObject: {fileID: 1408037638}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.4, y: -5.25, z: 0}
+  m_LocalPosition: {x: 5.34, y: -5.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1455,8 +1455,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 868350285
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7147553b1e72eec449c5ace4f9f4d13a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1478,7 +1478,7 @@ Transform:
   m_GameObject: {fileID: 1483798772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.98, y: -7.45, z: 0}
+  m_LocalPosition: {x: -18.44, y: -7.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2041,7 +2041,7 @@ GameObject:
   - component: {fileID: 1789049896}
   - component: {fileID: 1789049895}
   - component: {fileID: 1789049894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Crystal_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2171,7 +2171,7 @@ GameObject:
   - component: {fileID: 2013482301}
   - component: {fileID: 2013482300}
   - component: {fileID: 2013482299}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Crystal_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - GriKutular
   - Water
   - UI
-  - 
+  - Kristaller
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: GriKutular
+    uniqueID: 2501940131
+    locked: 0
+  - name: Astronotlar
+    uniqueID: 868350285
     locked: 0
