@@ -43,6 +43,7 @@ public class AstronotHareket : MonoBehaviour
     {
         if (collision.tag == "Kristaller" && saglik < 100)
         {
+            kristalSayisi++;
             saglik++;
             Destroy(collision.gameObject);
         }
