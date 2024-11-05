@@ -6,7 +6,7 @@ public class AstronotHareket : MonoBehaviour
 {
     public float hizKatsayisi;
     public int kristalSayisi;
-    
+    public int saglik = 50;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,11 +41,11 @@ public class AstronotHareket : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Kristaller")
-            kristalSayisi++;
+        if (collision.tag == "Kristaller" && saglik<100)
+            saglik++;
 
-        if(collision.tag=="Spike")
-            Debug.Log("Can azaldý!!!");
+        if(collision.tag=="Spike" && saglik>0)
+            saglik--;
     }
 
 }
