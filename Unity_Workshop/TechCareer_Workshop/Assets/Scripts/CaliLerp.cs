@@ -21,6 +21,8 @@ public class CaliLerp : MonoBehaviour
         float tamamlananYuzde = gecenSure / istenilenSure;
         //transform.position = Vector3.Lerp(baslangicKonumu, bitisKonumu, tamamlananYuzde);
         //transform.position = Vector3.Lerp(baslangicKonumu, bitisKonumu, Time.deltaTime);
-        transform.position = Vector3.Lerp(baslangicKonumu, bitisKonumu, Mathf.SmoothStep(0,1,tamamlananYuzde));
+        transform.position = Vector3.Lerp(baslangicKonumu, bitisKonumu, Mathf.SmoothStep(0, 1, tamamlananYuzde));
+
+
     }
 }
