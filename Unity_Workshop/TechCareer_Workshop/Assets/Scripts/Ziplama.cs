@@ -28,7 +28,7 @@ public class Ziplama : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && yerdeMi == true)
         {
-            rb.velocity += new Vector2(0, 10f);
+            rb.velocity += new Vector2(0, 5f);
         }
     }
 }
