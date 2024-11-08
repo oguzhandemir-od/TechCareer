@@ -8,6 +8,10 @@ TagManager:
   - Spike
   - Platformlar
   - Enemy
+  - SagDuvar
+  - SolDuvar
+  - SagSinir
+  - SolSinir
   layers:
   - Default
   - TransparentFX
